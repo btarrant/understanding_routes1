@@ -6,9 +6,9 @@ app = Flask(__name__)    # Create a new instance of the Flask class called "app"
 def hello_world():
     return 'Hello World!'  # Return the string 'Hello World!' as a response
 
-@app.route('/success')
+@app.route('/dojo')
 def success():
-    return "Success"
+    return "Dojo!"
 
 @app.route('/hello/<string:banana>/<int:num>')
 def hello(banana, num):
